@@ -13,7 +13,7 @@ public class BootCompleteReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        Toast.makeText(context,"Boot Complete",Toast.LENGTH_SHORT).show();
+        Toast.makeText(context,"Boot Completes",Toast.LENGTH_SHORT).show();
         Intent activityIntent = new Intent(context, MainActivity.class);
         activityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(activityIntent);
